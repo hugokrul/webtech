@@ -9,13 +9,30 @@
     <title>Document</title>
 </head>
 <body>
-<nav>
-  <a href="index.html">HOME</a>
-  <a href="summary.html" class="active">SUMMARY</a>
-  <a href="#">CAST</a>
-  <a href="#">REVIEWS</a>
-  <a href="#">CHARACTERS</a>
-</nav>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="summary.html">SUMMARY</a></li>
+            <li><a href="#">CAST</a></li>
+            <li><a href="#">REVIEWS</a></li>
+            <li><a href="characters.html">CHARACTERS</a></li>
+        </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="summary.html">SUMMARY</a></li>
+            <li><a href="#">CAST</a></li>
+            <li><a href="#">REVIEWS</a></li>
+            <li><a href="characters.html">CHARACTERS</a></li>
+        </ul>
+    </div>
+</header>
+<script src="/script/index.js"></script>
 <h1>Summary</h1>
 <p>How to Train Your Dragon is a 2010 animated action-adventure film produced by DreamWorks Animation and distributed by Paramount Pictures. Directed by Chris Sanders and Dean DeBlois, the film is loosely based on the 2003 book of the same name by British author Cressida Cowell.<br>
   <br>
