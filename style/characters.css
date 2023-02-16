@@ -1,4 +1,85 @@
-body, * {
+body,
+* {
     margin: 0;
     padding: 0;
+}
+
+.characters--imageDescription {
+    width: 100%;
+    max-width: 1200px
+}
+
+section.characters {
+    text-align: center;
+    margin-top: 40px;
+    color: #1e0e62;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.characters {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    margin-top: 40px;
+}
+
+.characters--order2 {
+    order: 1;
+}
+
+.characters--image {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.characters--image img {
+    width: 100%;
+}
+
+.characters--description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.characters--description__name {
+    display: flex;
+    align-items: baseline;
+    column-gap: 20px;
+}
+
+.characters--description__name h5 {
+    color: rgba(21, 20, 57, 0.6);
+    width: 100%;
+}
+
+.characters--description__information {
+    margin-top: 5px;
+    text-align: left;
+}
+
+.centeredDescription {
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .characters {
+        grid-template-columns: 100%;
+    }
+
+    .characters--order2 {
+        order: 0;
+    }
+
+    .characters--description {
+        margin-top: 25px;
+    }
 }
