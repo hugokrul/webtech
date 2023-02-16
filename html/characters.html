@@ -1,20 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/characters.css">
-    <link rel="stylesheet" href="/style/nav.css">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="#">SUMMARY</a>
-        <a href="#">CAST</a>
-        <a href="#">REVIEWS</a>
-        <a href="characters.html" class="active">CHARACTERS</a>
-    </nav>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style/characters.css" />
+        <link rel="stylesheet" href="/style/nav.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="summary.html">SUMMARY</a></li>
+                    <li><a href="#">CAST</a></li>
+                    <li><a href="#">REVIEWS</a></li>
+                    <li><a href="characters.html" class="active">CHARACTERS</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="summary.html">SUMMARY</a></li>
+                    <li><a href="#">CAST</a></li>
+                    <li><a href="#">REVIEWS</a></li>
+                    <li><a href="characters.html" class="active">CHARACTERS</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="characters">
+            <h1>Characters</h1>
+            <div class="characters--imageDescription">
+                <div class="characters" id="hiccup">
+                    <div class="characters--image characters--order1">
+                        <img src="/images/hiccup.jpg" />
+                    </div>
+                    <div class="characters--description characters--order2">
+                        <div class="characters--description__name">
+                            <h3>Hiccup</h3>
+                            <h5>Main Character</h5>
+                        </div>
+                        <div class="characters--description__information">
+                            <p>
+                                Hiccup Horrendous Haddock III is the protagonist
+                                of the movie. He is 15 years old and lives in
+                                Berk. His character is described by
+                                <a
+                                    href="https://dreamworks.fandom.com/wiki/Hiccup_Haddock_III"
+                                    target="_black"
+                                    >dreamworks fandom</a
+                                >
+                                as witty, sarcastic, well-spoken but shy.
+                                <br />
+                            </p>
+
+                            <p></p>
+                            <p>
+                                After his encounter with toothless, the rarest
+                                and most powerfull dragon known, he discovers
+                                his talent for riding and training dragons.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="characters" id="toothless">
+                    <div class="characters--image characters--order2">
+                        <img src="/images/toothless.jpg" />
+                    </div>
+                    <div class="characters--description charaters--order1">
+                        <div class="characters--description__name">
+                            <h3>Toothless</h3>
+                            <h5>Dragon</h5>
+                        </div>
+                        <div class="characters--description__information">
+                            <p>Description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="/script/index.js"></script>
+    </body>
 </html>
