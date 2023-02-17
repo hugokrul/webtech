@@ -102,7 +102,7 @@ ul li a:hover {
     padding: 5px;
 }
 
-.summaryHover:hover > .summaryDropDown{
+.characterHover:hover > .characterDropDown{
     display: block;
 }
 
