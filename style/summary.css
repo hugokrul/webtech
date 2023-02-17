@@ -24,6 +24,11 @@ section.summary {
     grid-template-columns: 50% 50%;
     justify-items: center;
     text-align: center;
+    font-size: large;
+}
+.top{
+    width:90%;
+    font-size: larger;
 }
 
 .summary--order2 {
@@ -62,6 +67,7 @@ section.summary {
     display: flex;
     align-items: baseline;
     column-gap: 20px;
+    font-size: larger;
 }
 
 .summary--parts__text {
