@@ -1,4 +1,19 @@
-body, * {
-    margin: 0;
-    padding: 0;
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero--content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.hero--content h4 {
+  margin-top: 30px;
+  max-width: 470px;
+}
+.hero--content .btn {
+  margin-top: 40px;
 }
