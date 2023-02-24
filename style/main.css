@@ -106,8 +106,14 @@ p {
 
 .center {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+}
+
+.whiteBtn {
+  background-color: white;
+  color: var(--accent);
 }
 
 @media screen and (max-width: 800px) {

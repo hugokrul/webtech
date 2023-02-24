@@ -50,3 +50,44 @@ body,
   margin-top: 30px;
   margin-bottom: 40px;
 }
+
+.infoSection {
+  margin: 75px 0px;
+}
+
+.viewMore h2 {
+  margin-bottom: 30px;
+}
+
+.viewMore--grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.viewMore--card {
+  padding: 35px;
+  border-radius: 10px;
+}
+
+.viewMore--card .btn {
+  margin-top: 30px;
+}
+
+.viewMore--card:nth-child(1) {
+  background-color: #ebeaed;
+}
+
+.viewMore--card:nth-child(2) {
+  border: 2px solid #ebeaed;
+}
+
+.viewMore--card:nth-child(3) {
+  background-color: var(--accent);
+  color: white !important;
+}
+
+.viewMore--card:nth-child(4) {
+  background: url("/images/dragon-background.jpg");
+  color: white !important;
+}
