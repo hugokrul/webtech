@@ -4,22 +4,10 @@ body,
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .characters {
     width: 100%;
     max-width: 1200px;
     padding-top: 20px;
-}
-
-section {
-    text-align: center;
-    color: #1e0e62;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .character {
@@ -86,27 +74,19 @@ section {
 }
 
 .stormfly {
-    display: inline;
+    position: relative;
     font-weight: bold;
 }
 
-.stormflyImage {
-    position: absolute;
-    z-index: 1;
+.stormfly:hover::after {
+    content: "";
     width: 300px;
-    margin-top: -200px;
-    margin-left: 20px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.stormflyImage img {
-    width: 100%;
-}
-
-.stormfly:hover > .stormflyImage{
+    height: 300px;
+    background: url("/images/stormfly.png") 0 0 no-repeat;
+    background-size: 100%;
+    margin-top: -175px;
+    margin-left: 50px;
+    position: absolute;
     display: flex;
 }
 
