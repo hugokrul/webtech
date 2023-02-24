@@ -20,6 +20,10 @@
   height: 100%;
 }
 
+.mainCharacters--title {
+  margin-bottom: 50px;
+}
+
 .mainCharacters--grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
