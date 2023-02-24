@@ -1,0 +1,178 @@
+.hero--content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.hero--content h4 {
+  margin-top: 30px;
+  max-width: 470px;
+}
+.hero--content .btn {
+  margin-top: 40px;
+}
+.hero--image {
+  max-height: 600px;
+  display: flex;
+  justify-content: center;
+}
+.hero--image img {
+  height: 100%;
+}
+
+.mainCharacters--grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.4fr 0.8fr 0.5fr 1.3fr;
+  gap: 15px;
+  grid-template-areas:
+    "c1 c2 c3"
+    "c1 c4 c3"
+    "c1 c4 c6"
+    "c5 c4 c6";
+  height: 700px;
+}
+#c2 {
+  grid-area: c2;
+}
+#c1 {
+  grid-area: c1;
+}
+#c3 {
+  grid-area: c3;
+}
+#c4 {
+  grid-area: c4;
+}
+#c5 {
+  grid-area: c5;
+}
+#c6 {
+  grid-area: c6;
+}
+
+.mainCharacters--character {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  background: black;
+  cursor: pointer;
+}
+
+.mainCharacters--character img {
+  height: 100%;
+  width: auto;
+  transition: 0.3s;
+}
+
+.mainCharacters--character:hover > img {
+  height: 120%;
+}
+.mainCharacters--character:hover > .mainCharacters--character__content {
+  opacity: 1;
+}
+
+.mainCharacters--character__characterImage {
+  opacity: 1;
+  position: absolute;
+}
+.mainCharacters--character__castImage {
+  opacity: 0;
+  position: absolute;
+}
+
+.mainCharacters--character:hover > .mainCharacters--character__characterImage {
+  opacity: 0;
+}
+.mainCharacters--character:hover > .mainCharacters--character__castImage {
+  opacity: 1;
+}
+
+.mainCharacters--character__content {
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background: black;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 0.8) 0%,
+    rgba(0, 0, 0, 0.5) 40%,
+    rgba(0, 0, 0, 0.2) 75%
+  );
+}
+
+.mainCharacters--character__content p {
+  margin: 0px;
+}
+.mainCharacters--character__content h3 {
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.castList--item {
+  display: grid;
+  grid-template-columns: 175px 1fr;
+  margin: 25px auto;
+}
+.castList--item__image {
+  height: 150px;
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.castList--item__image img {
+  height: 120%;
+  width: auto;
+}
+
+.castList--item__content {
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.castList--item__content h4 {
+  margin-left: 15px;
+}
+.castList--item__content p {
+  margin: 0px;
+}
+
+.fullCast--title {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.fullCast {
+  max-width: 700px;
+  margin: 0px auto;
+  margin-top: 75px;
+}
+
+@media screen and (max-width: 800px) {
+  .mainCharacters--grid {
+    display: flex;
+    flex-direction: column;
+    height: unset;
+  }
+  .mainCharacters--character {
+    min-height: 300px;
+    width: 100%;
+  }
+}

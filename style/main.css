@@ -79,6 +79,7 @@ p {
   max-width: 1200px;
   margin: auto;
   padding: 0px 25px;
+  box-sizing: border-box;
 }
 
 .btn {
@@ -110,6 +111,10 @@ p {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+.flex {
+  display: flex;
+  align-items: center;
 }
 
 .whiteBtn {
