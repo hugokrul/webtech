@@ -22,7 +22,7 @@ h2 {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 36px;
   line-height: 52px;
   letter-spacing: -0.4px;
   color: var(--accent);
@@ -31,9 +31,10 @@ h2 {
 h3 {
   font-family: "DM Sans";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 22px;
   line-height: 32px;
+  color: var(--accent);
 }
 
 h4 {
@@ -62,8 +63,8 @@ p {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 22px;
 
   color: rgba(21, 20, 57, 0.4);
 }
@@ -114,6 +115,14 @@ p {
 .whiteBtn {
   background-color: white;
   color: var(--accent);
+}
+
+.contrastParagraph {
+  color: white;
+  font-weight: 500;
+}
+.contrastHeading {
+  color: white;
 }
 
 @media screen and (max-width: 800px) {

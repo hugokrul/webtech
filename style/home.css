@@ -52,7 +52,7 @@ body,
 }
 
 .infoSection {
-  margin: 75px 0px;
+  margin: 100px 0px;
 }
 
 .viewMore h2 {
@@ -84,10 +84,8 @@ body,
 
 .viewMore--card:nth-child(3) {
   background-color: var(--accent);
-  color: white !important;
 }
 
 .viewMore--card:nth-child(4) {
   background: url("/images/dragon-background.jpg");
-  color: white !important;
 }
