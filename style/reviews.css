@@ -19,12 +19,32 @@ section {
 .rating {
     background-color: lightgray;
     width: 70%;
-    height: 30vh;
-    display: grid;
-    align-content: center;
-    grid-template-columns: 50% 50%;
+    max-width: 1000px;
+    min-height: 30vh;
     padding: 10px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rating p {
+    color: black;
+}
+
+.rating .columns {
+    margin-top: 20px;
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+
+.rating .columns .right {
+    text-align: left;
+}
+
+.rating .columns .left {
+    text-align: right;
 }
 
 tr, td {
@@ -72,6 +92,14 @@ td.left a {
     height: 100%;
 }
 
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+tr:not(:nth-child(even)) {
+    background-color: #f2f2f2;
+}
+
 @media screen and (max-width: 800px) {
     table {
         min-width: 1px;
@@ -86,5 +114,6 @@ td.left a {
     }
     td {
         height: 100%;
+        border: none;
     }
 }
