@@ -32,11 +32,17 @@
   justify-content: center;
   overflow: hidden;
   border-radius: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  height: 145px;
 }
 
 .charactersPreview--card__image img {
   width: 100%;
+  transition: 0.3s;
+}
+
+.charactersPreview--card__image:hover > img {
+  width: 130%;
 }
 
 .charactersPreview h2 {
@@ -47,6 +53,17 @@
 
 .infoSection {
   margin: 100px 0px;
+}
+
+.infoSection p {
+  max-width: 600px;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.viewMore {
+  margin-bottom: 50px;
 }
 
 .viewMore h2 {
