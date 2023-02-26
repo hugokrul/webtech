@@ -26,6 +26,13 @@ section {
   align-items: center;
 }
 
+article {
+  text-align: center;
+  color: #1e0e62;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 h1 {
   font-family: "DM Sans";
