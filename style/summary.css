@@ -21,8 +21,9 @@ section.summary {
     font-size: large;
 }
 .top{
-    width:90%;
-    font-size: large;
+    max-width:70%;
+    font-size: medium;
+    margin: 0px auto;
 }
 
 .summary--order2 {
@@ -62,6 +63,7 @@ section.summary {
     align-items: baseline;
     column-gap: 20px;
     font-size: larger;
+    text-align: left;
 }
 
 .summary--parts__text {
