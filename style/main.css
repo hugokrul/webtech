@@ -9,7 +9,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body, * {
+body,
+* {
   margin: 0;
   padding: 0;
 }
@@ -157,7 +158,21 @@ p {
 
 @media screen and (max-width: 800px) {
   .column11 {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .removeOnSmallScreen {
+    display: none !important;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .hero--content {
+    margin-top: 20px;
+    margin-bottom: 25px;
   }
 }

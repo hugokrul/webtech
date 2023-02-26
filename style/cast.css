@@ -171,7 +171,7 @@
 }
 
 h3 a {
-  color: inherit; 
+  color: inherit;
   text-decoration: none;
 }
 
@@ -184,5 +184,16 @@ h3 a {
   .mainCharacters--character {
     min-height: 300px;
     width: 100%;
+  }
+  .hero--image {
+    width: 120vw;
+  }
+  .hero--image img {
+    height: 300px;
+    margin-right: -200px;
+    margin-top: -400px;
+  }
+  .hero--content {
+    padding-right: 50px;
   }
 }

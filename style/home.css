@@ -100,3 +100,14 @@
 .viewMore--card:nth-child(4) {
   background: url("/images/dragon-background.jpg");
 }
+
+@media screen and (max-width: 800px) {
+  .hero--image {
+    width: 120vw;
+  }
+  .hero--image img {
+    height: unset;
+    width: 100%;
+    margin-right: -200px;
+  }
+}
