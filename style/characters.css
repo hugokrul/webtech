@@ -1,7 +1,17 @@
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}   
+
 .characters {
     width: 100%;
     max-width: 1200px;
     padding-top: 20px;
+}
+
+section.quiz {
+    margin-bottom: 100px;
 }
 
 .character {
@@ -84,6 +94,62 @@
     position: absolute;
     display: flex;
 }
+
+.container {
+    margin-top: 20px;
+    width: 800px;
+    max-width: 80%;
+    border-radius: 5px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn-correct{
+    --hue: var(--hue-correct);
+}
+
+.btn-wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
     .character {
         grid-template-columns: 100%;
