@@ -9,13 +9,11 @@ let movieElements = [];
 let currentIndex = 0;
 
 // creates an html element which you can add easily to the DOM.
-function createImageElement(name, width, height, extension) {
+function createImageElement(name, extension) {
     let element = document.createElement('div');
     element.classList.add('moviesToChoose');
     let image = document.createElement('img');
     image.setAttribute("src", `../images/recommended/${name}.${extension}`);
-    image.setAttribute("height", height);
-    image.setAttribute("width", width);
     image.setAttribute("id", name);
     image.addEventListener('click', next);
     element.appendChild(image);
@@ -25,7 +23,7 @@ function createImageElement(name, width, height, extension) {
 // Pushes the elements to the list from which another function appends it to the dom.
 function createMovieElements() {
     for (let i = 0; i < movies.length; i++) {
-        movieElements.push(createImageElement(movies[i], 250, 400, 'jpg'));
+        movieElements.push(createImageElement(movies[i], 'jpg'));
     }
 }
 

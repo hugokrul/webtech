@@ -164,6 +164,20 @@ section.recommended {
     scale: 1.01;
 }
 
+.moviesToChoose {
+    max-width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.moviesToChoose img {
+    width: 100%;
+    height: 100%;
+}
+
 @keyframes scroll-left {
     from {
         transform: translateX(var(--scroll-start))
