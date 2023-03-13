@@ -153,6 +153,17 @@ section.recommended {
     margin-left: 0.75rem;
 }
 
+#like {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+}
+
+#like div:hover {
+    cursor: pointer;
+    scale: 1.01;
+}
+
 @keyframes scroll-left {
     from {
         transform: translateX(var(--scroll-start))
