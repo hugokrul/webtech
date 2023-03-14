@@ -74,6 +74,34 @@ section.summary {
 .centeredDescription {
     display: flex;
 }
+.summary--order1{
+    position:relative;
+}
+
+#found {
+    background-image: url(/images/dragon.png);
+    width: 30px;
+    height: 30px;
+}
+#found1{
+    position: absolute;
+    max-height: 32px;
+    max-width: 32px;
+    left: 15px;
+    bottom:15px;
+}
+
+#start{
+background-color: red;
+color:white;
+font-size: large;
+}
+
+#start1{
+    left:45%;
+    max-height: 25px;
+    max-width: 100px;
+}
 
 
 @media screen and (max-width: 800px) {
