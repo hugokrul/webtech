@@ -104,6 +104,12 @@
   background: url("/images/dragon-background.jpg");
 }
 
+.attackDragon {
+  position: absolute;
+  top: 0px;
+  right: 100vw;
+}
+
 @media screen and (max-width: 800px) {
   .hero--image {
     width: 120vw;

@@ -1,170 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../style/main.css" />
-		<link rel="stylesheet" href="../style/nav.css" />
-		<link rel="stylesheet" href="../style/home.css" />
-		<title>HTTYD - Home</title>
-	</head>
-	<body>
-		<header>
-		<nav>
-			<ul>
-				<li><a href="index.html" class="active">HOME</a></li>
-				<li class="summaryHover">
-					<a href="summary.html">SUMMARY</a>
-					<div class="summaryDropDown">
-					<a class="dropdown" href="summary.html#discovery">Discovery</a>
-					<a class="dropdown" href="summary.html#battles">Battles</a>
-					<a class="dropdown" href="summary.html#heroes">Heroes</a>
-					<a class="dropdown" href="summary.html#friendship">Friendship</a>
-					</div>
-				</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/nav.css" />
+    <link rel="stylesheet" href="../style/home.css" />
+    <title>HTTYD - Home</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li class="summaryHover">
+            <a href="summary.html">SUMMARY</a>
+            <div class="summaryDropDown">
+              <a class="dropdown" href="summary.html#discovery">Discovery</a>
+              <a class="dropdown" href="summary.html#battles">Battles</a>
+              <a class="dropdown" href="summary.html#heroes">Heroes</a>
+              <a class="dropdown" href="summary.html#friendship">Friendship</a>
+            </div>
+          </li>
 
-				<li><a href="cast.html">CAST</a></li>
-				<li><a href="reviews.html">REVIEWS</a></li>
-				<li class="characterHover">
-					<a href="characters.html">CHARACTERS</a>
-					<div class="characterDropDown">
-					<a class="dropdown" href="characters.html#hiccup">Hiccup</a>
-					<a class="dropdown" href="characters.html#toothless">Toothless</a>
-					<a class="dropdown" href="characters.html#astrid">Astrid</a>
-					<a class="dropdown" href="characters.html#stoick">Stoick</a>
-					<a class="dropdown" href="characters.html#fishlegs">Fishlegs</a>
-					<a class="dropdown" href="characters.html#snotlout">Snotlout</a>
-					<a class="dropdown" href="characters.html#gobber">Gobber</a>
-					</div>
-				</li>
-                <li><a href="info.html">INFO</a></li>
-			</ul>
-		</nav>
-			<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-				<ul class="mobile-menu">
-					<li><a href="index.html" class="active">HOME</a></li>
-					<li><a href="summary.html">SUMMARY</a></li>
-					<li><a href="cast.html">CAST</a></li>
-					<li><a href="reviews.html">REVIEWS</a></li>
-					<li><a href="characters.html">CHARACTERS</a></li>
-					<li><a href="info.html">INFO</a></li>
-				</ul>
-			</div>
-			</header>
+          <li><a href="cast.html">CAST</a></li>
+          <li><a href="reviews.html">REVIEWS</a></li>
+          <li class="characterHover">
+            <a href="characters.html">CHARACTERS</a>
+            <div class="characterDropDown">
+              <a class="dropdown" href="characters.html#hiccup">Hiccup</a>
+              <a class="dropdown" href="characters.html#toothless">Toothless</a>
+              <a class="dropdown" href="characters.html#astrid">Astrid</a>
+              <a class="dropdown" href="characters.html#stoick">Stoick</a>
+              <a class="dropdown" href="characters.html#fishlegs">Fishlegs</a>
+              <a class="dropdown" href="characters.html#snotlout">Snotlout</a>
+              <a class="dropdown" href="characters.html#gobber">Gobber</a>
+            </div>
+          </li>
+          <li><a href="info.html">INFO</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="summary.html">SUMMARY</a></li>
+          <li><a href="cast.html">CAST</a></li>
+          <li><a href="reviews.html">REVIEWS</a></li>
+          <li><a href="characters.html">CHARACTERS</a></li>
+          <li><a href="info.html">INFO</a></li>
+        </ul>
+      </div>
+    </header>
 
-		<div class="maxWidthContainer">
-		<div class="hero">
-			<div class="column11 hero--column11">
-			<div class="hero--content">
-				<h1>Ready to train your dragon?</h1>
-				<h4>
-				A hapless young Viking who aspires to hunt dragons becomes the
-				unlikely friend of a young dragon himself, and learns there may be
-				more to the creatures than he assumed.
-				</h4>
-				<a href="characters"> <button class="btn">Explore</button></a>
-			</div>
-			<div class="hero--image">
-				<img src="../images/dragon-team.png" alt="dragon-team" />
-			</div>
-			</div>
-		</div>
-		<div class="charactersPreview">
-			<h2>Characters</h2>
-			<div class="charactersPreview--grid">
-			<div class="charactersPreview--card">
-				<div class="charactersPreview--card__image">
-				<img src="../images/hiccup.jpg" alt="hiccup" />
-				</div>
-				<div class="charactersPreview--card__content">
-				<h3>Hiccup</h3>
-				<p>Main Character</p>
-				</div>
-			</div>
-			<div class="charactersPreview--card">
-				<div class="charactersPreview--card__image">
-				<img src="../images/toothless.jpg" alt="toothless" />
-				</div>
-				<div class="charactersPreview--card__content">
-				<h3>Toothless</h3>
-				<p>Dragon</p>
-				</div>
-			</div>
-			<div class="charactersPreview--card">
-				<div class="charactersPreview--card__image">
-				<img src="../images/astrid.jpg" alt="astrid" />
-				</div>
-				<div class="charactersPreview--card__content">
-				<h3>Astrid</h3>
-				<p>(Girl)friend of Hiccup</p>
-				</div>
-			</div>
-			<div class="charactersPreview--card">
-				<div class="charactersPreview--card__image">
-				<img src="../images/stoick.png" alt="stoick" />
-				</div>
-				<div class="charactersPreview--card__content">
-				<h3>Stoick</h3>
-				<p>Dad of Hiccup</p>
-				</div>
-			</div>
-			</div>
-			<div class="center">
-			<a href="characters.html">
-				<button class="btn secondaryBtn">View more</button></a
-			>
-			</div>
-		</div>
-		<div class="infoSection">
-			<div class="center">
-			<h2>The amazing animation film</h2>
-			<p>
-				How to Train Your Dragon is a 2010 animated action-adventure film
-				produced by DreamWorks Animation and distributed by Paramount
-				Pictures. Directed by Chris Sanders and Dean DeBlois, the film is
-				loosely based on the 2003 book of the same name by British author
-				Cressida Cowell.
-			</p>
-			</div>
-		</div>
-		<div class="viewMore">
-			<h2>View more</h2>
-			<div class="viewMore--grid">
-			<div class="viewMore--card">
-				<h3>Summary</h3>
-				<p>A brief description of the amazing film</p>
-				<a href="summary.html"
-				><button class="btn whiteBtn">Explore</button>
-				</a>
-			</div>
-			<div class="viewMore--card">
-				<h3>Cast</h3>
-				<p>The voice-overs we love</p>
-				<a href="cast.html"
-				><button class="btn secondaryBtn">Explore</button>
-				</a>
-			</div>
-			<div class="viewMore--card">
-				<h3 class="contrastHeading">Characters</h3>
-				<p class="contrastParagraph">The people we love</p>
-				<a href="characters.html"
-				><button class="btn whiteBtn">Explore</button>
-				</a>
-			</div>
-			<div class="viewMore--card">
-				<h3 class="contrastHeading">Reviews</h3>
-				<p class="contrastParagraph">What do other people think</p>
-				<a href="reviews.html">
-				<button class="btn whiteBtn">Explore</button></a
-				>
-			</div>
-			</div>
-		</div>
-		</div>
-		<script src="../script/index.js"></script>
-	</body>
+    <div class="maxWidthContainer">
+      <div class="hero">
+        <div class="column11 hero--column11">
+          <div class="hero--content">
+            <h1>Ready to train your dragon?</h1>
+            <h4>
+              A hapless young Viking who aspires to hunt dragons becomes the
+              unlikely friend of a young dragon himself, and learns there may be
+              more to the creatures than he assumed.
+            </h4>
+            <button onclick="dragonAttack()" class="btn">
+              Let the dragons fly!
+            </button>
+          </div>
+          <div class="hero--image">
+            <img
+              src="../images/dragon-team.png"
+              title="Hiccup and the dragon toothless"
+              alt="dragon-team"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="charactersPreview">
+        <h2>Characters</h2>
+        <div class="charactersPreview--grid">
+          <div class="charactersPreview--card">
+            <div class="charactersPreview--card__image">
+              <img
+                src="../images/hiccup.jpg"
+                title="Hiccup is the main character"
+                alt="hiccup"
+              />
+            </div>
+            <div class="charactersPreview--card__content">
+              <h3>Hiccup</h3>
+              <p>Main Character</p>
+            </div>
+          </div>
+          <div class="charactersPreview--card">
+            <div class="charactersPreview--card__image">
+              <img
+                src="../images/toothless.jpg"
+                title="Toothless is the dragon of Hiccup"
+                alt="toothless"
+              />
+            </div>
+            <div class="charactersPreview--card__content">
+              <h3>Toothless</h3>
+              <p>Dragon</p>
+            </div>
+          </div>
+          <div class="charactersPreview--card">
+            <div class="charactersPreview--card__image">
+              <img
+                src="../images/astrid.jpg"
+                title="Astrid is a great dragon fighter"
+                alt="astrid"
+              />
+            </div>
+            <div class="charactersPreview--card__content">
+              <h3>Astrid</h3>
+              <p>(Girl)friend of Hiccup</p>
+            </div>
+          </div>
+          <div class="charactersPreview--card">
+            <div class="charactersPreview--card__image">
+              <img
+                src="../images/stoick.png"
+                title="Stoick is the town mayor"
+                alt="stoick"
+              />
+            </div>
+            <div class="charactersPreview--card__content">
+              <h3>Stoick</h3>
+              <p>Dad of Hiccup</p>
+            </div>
+          </div>
+        </div>
+        <div class="center">
+          <button
+            onclick="window.location.href='characters.html'"
+            class="btn secondaryBtn"
+          >
+            View more
+          </button>
+        </div>
+      </div>
+      <div class="infoSection">
+        <div class="center">
+          <h2>The amazing animation film</h2>
+          <p>
+            How to Train Your Dragon is a 2010 animated action-adventure film
+            produced by DreamWorks Animation and distributed by Paramount
+            Pictures. Directed by Chris Sanders and Dean DeBlois, the film is
+            loosely based on the 2003 book of the same name by British author
+            Cressida Cowell.
+          </p>
+        </div>
+      </div>
+      <div class="viewMore">
+        <h2>View more</h2>
+        <div class="viewMore--grid">
+          <div class="viewMore--card">
+            <h3>Summary</h3>
+            <p>A brief description of the amazing film</p>
+            <button
+              onclick="window.location.href='summary.html'"
+              class="btn whiteBtn"
+            >
+              Explore
+            </button>
+          </div>
+          <div class="viewMore--card">
+            <h3>Cast</h3>
+            <p>The voice-overs we love</p>
+
+            <button
+              onclick="window.location.href='cast.html'"
+              class="btn secondaryBtn"
+            >
+              Explore
+            </button>
+          </div>
+          <div class="viewMore--card">
+            <h3 class="contrastHeading">Characters</h3>
+            <p class="contrastParagraph">The people we love</p>
+            <button
+              onclick="window.location.href='characters.html'"
+              class="btn whiteBtn"
+            >
+              Explore
+            </button>
+          </div>
+          <div class="viewMore--card">
+            <h3 class="contrastHeading">Reviews</h3>
+            <p class="contrastParagraph">What do other people think</p>
+            <button
+              onclick="window.location.href='reviews.html'"
+              class="btn whiteBtn"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="attackDragon">
+        <img
+          src="/images/attackingDragon1.png"
+          title="dragon attacking"
+          alt="How To Train Your Dragon
+        dragon attacking"
+        />
+      </div>
+      <div class="attackDragon">
+        <img
+          src="/images/attackingDragon2.png"
+          title="dragon attacking"
+          alt="How To Train Your Dragon
+        dragon attacking"
+        />
+      </div>
+      <div class="attackDragon">
+        <img
+          src="/images/attackingDragon3.png"
+          title="dragon attacking"
+          alt="How To Train Your Dragon
+        dragon attacking"
+        />
+      </div>
+      <div class="attackDragon">
+        <img
+          src="/images/attackingDragon4.png"
+          title="dragon attacking"
+          alt="How To Train Your Dragon
+        dragon attacking"
+        />
+      </div>
+      <div class="attackDragon">
+        <img
+          src="/images/attackingDragon5.png"
+          title="dragon attacking"
+          alt="How To Train Your Dragon
+        dragon attacking"
+        />
+      </div>
+    </div>
+    <script src="../script/main.js"></script>
+    <script src="../script/index.js"></script>
+  </body>
 </html>

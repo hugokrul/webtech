@@ -1,0 +1,10 @@
+.header__dropdowns {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  right: 30px;
+  gap: 20px;
+}
+.header__dropdowns .select {
+  width: 200px;
+}
