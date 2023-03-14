@@ -48,7 +48,7 @@ function headerDropdownAction() {
         //color is HEX, but check validity
         if (color.length < 6) {
           color = prompt(
-            "Value not valid. Enter a new HEX value or standard naming for the new backgroundColor:"
+            "Value not valid. Enter a new HEX value or standard naming for the new color:"
           );
           getColorFormat(color);
         }
@@ -59,7 +59,7 @@ function headerDropdownAction() {
 
     if (actionSelect.value === "Text Color") {
       let color = prompt(
-        "Enter a new HEX value or standard naming for the new backgroundColor:"
+        "Enter a new HEX value or standard naming for the new color:"
       );
       element.style.color = getColorFormat(color);
     }
