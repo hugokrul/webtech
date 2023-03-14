@@ -1,17 +1,7 @@
-<script>
-
-
-document.getElementById("parent").addEventListener("click", function(e) {
-  console.log("Parent element clicked")}
-);
-
-document.getElementById("child").addEventListener("click", function(e) {
-  console.log("Child element clicked")}
-  e.stopPropagation(); 
-);
-
-function showAlert() {
-  alert('Hello World!')
+function foundAlert() {
+  alert('Congratulations, you found Toothless!')
   }
 
-</script>
+function startAlert() {
+    alert('Toothless was lost during one of his flights, can you help Hiccup find him? He was last seen on this webpage.')
+}
