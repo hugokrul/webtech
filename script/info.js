@@ -136,8 +136,7 @@ function populateHTML(movie) {
 	document.body.appendChild(movieSection);
 
 	const artistSection = document.createElement('section');
-	artistSection.style.display = "grid";
-	artistSection.style.gridTemplateColumns = "repeat(4, auto)";
+  artistSection.classList.add('artists');
 
 	const castH2 = document.createElement('h2');
 	castH2.innerText = "Cast:"
