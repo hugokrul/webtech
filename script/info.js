@@ -1,63 +1,64 @@
 class Movie {
-	writers = [];
-	starts = [];
-	constructor(year, title, genre, director, writers, stars) {
-		this.year = year;
-		this.title = title;
-		this.genre = genre;
-		this.director = director;
-		this.writers = writers;
-		this.stars = stars;
-		this.poster = "../images/poster.jpg";
-		this.trailer = "../images/trailer.mp4";
-		this.plot = "Long ago up North on the Island of Berk, the young Viking, Hiccup, wants to join his town's fight against the dragons that continually raid their town. However, his macho father and village leader, Stoik the Vast, will not allow his small, clumsy, but inventive son to do so. Regardless, Hiccup ventures out into battle and downs a mysterious Night Fury dragon with his invention, but can't bring himself to kill it. Instead, Hiccup and the dragon, whom he dubs Toothless, begin a friendship that would open up both their worlds as the observantboy learns that his people have misjudged the species. But even as the two each take flight in their own way, they find that they must fight the destructive ignorance plaguing their world.";
-	};
+  writers = [];
+  starts = [];
+  constructor(year, title, genre, director, writers, stars) {
+    this.year = year;
+    this.title = title;
+    this.genre = genre;
+    this.director = director;
+    this.writers = writers;
+    this.stars = stars;
+    this.poster = "../images/poster.jpg";
+    this.trailer = "../images/trailer.mp4";
+    this.plot =
+      "Long ago up North on the Island of Berk, the young Viking, Hiccup, wants to join his town's fight against the dragons that continually raid their town. However, his macho father and village leader, Stoik the Vast, will not allow his small, clumsy, but inventive son to do so. Regardless, Hiccup ventures out into battle and downs a mysterious Night Fury dragon with his invention, but can't bring himself to kill it. Instead, Hiccup and the dragon, whom he dubs Toothless, begin a friendship that would open up both their worlds as the observantboy learns that his people have misjudged the species. But even as the two each take flight in their own way, they find that they must fight the destructive ignorance plaguing their world.";
+  }
 
-	addWriter(writer) {
-		this.writers.push(writer);
-	}
+  addWriter(writer) {
+    this.writers.push(writer);
+  }
 
-	addStar(star) {
-		this.stars.push(star)
-	}
+  addStar(star) {
+    this.stars.push(star);
+  }
 }
 
 class Artist {
-	constructor(name, yob) {
-		this.name = name;
-		this.yob = yob;
-	}
+  constructor(name, yob) {
+    this.name = name;
+    this.yob = yob;
+  }
 }
 
 class Director extends Artist {
-	constructor(name, yob, directedMovies) {
-		super(name, yob);
-		this.directedMovies = directedMovies
-	}
+  constructor(name, yob, directedMovies) {
+    super(name, yob);
+    this.directedMovies = directedMovies;
+  }
 
-	addMovie(movie) {
-		this.directedMovies.push(movie)
-	}
+  addMovie(movie) {
+    this.directedMovies.push(movie);
+  }
 }
 
 class Writer extends Artist {
-	constructor(name, yob, writtenBooks) {
-		super(name, yob);
-		this.writtenBooks = writtenBooks;
-	}
+  constructor(name, yob, writtenBooks) {
+    super(name, yob);
+    this.writtenBooks = writtenBooks;
+  }
 
-	addBook(book) {
-		this.writtenBooks.push(book)
-	}
+  addBook(book) {
+    this.writtenBooks.push(book);
+  }
 }
 
 class Actor extends Artist {
-	constructor(name, yob, listOfMovies, picture, character) {
-		super(name, yob);
-		this.listOfMovies = listOfMovies;
-		this.picture = picture;
-		this.character = character;
-	}
+  constructor(name, yob, listOfMovies, picture, character) {
+    super(name, yob);
+    this.listOfMovies = listOfMovies;
+    this.picture = picture;
+    this.character = character;
+  }
 }
 
 // actors
@@ -74,13 +75,35 @@ const kieronElliot = new Actor("Kieron Elliot", 1995, ["Solitary", "Night Eyes",
 const ashleyJensen = new Actor("Ashley Jensen", 1969, ["Agatha Raisin", "Mayflies", "How to train your dragon", "Nativity!", "Christmas on Mistletoe Farm"], "../images/cast/ashleyJ.jpg", "Phlegma the Fierce");
 const davidTennant = new Actor("David Tennant", 1971, ["Doctor Who", "Des", "How to train your dragon", "The escape artist", "Gracepoint"], "../images/cast/davidT.jpg");
 
-let actors = [jayBaruchel, gerardButler, craigFerguson, americaFerrera, jonahHill, christofferMP, tjMiller, kristenWiig, robinAtkinDownes, kieronElliot, ashleyJensen];
+let actors = [
+  jayBaruchel,
+  gerardButler,
+  craigFerguson,
+  americaFerrera,
+  jonahHill,
+  christofferMP,
+  tjMiller,
+  kristenWiig,
+  robinAtkinDownes,
+  kieronElliot,
+  ashleyJensen,
+];
 
 // writer
-const cressidaCowell = new Writer("Cressida Cowell", 1966, ["The Wizard of Once", "The Treetop Twins Adventures books", "Little Wonder", "Super Sue"]);
+const cressidaCowell = new Writer("Cressida Cowell", 1966, [
+  "The Wizard of Once",
+  "The Treetop Twins Adventures books",
+  "Little Wonder",
+  "Super Sue",
+]);
 
-// director 
-const deanDeBlois = new Director("Dean De Blois", 1970, ["How to train your dragon", "Lilo & Stitch", "Leroy & Stitch", "Helma"])
+// director
+const deanDeBlois = new Director("Dean De Blois", 1970, [
+  "How to train your dragon",
+  "Lilo & Stitch",
+  "Leroy & Stitch",
+  "Helma",
+]);
 
 const httyd = new Movie(2010, "How To Train Your Dragon", "Action/Fantasy", deanDeBlois, [cressidaCowell], actors);
 
@@ -224,10 +247,10 @@ function populateHTML(movie) {
 }
 
 function refreshDropdowns() {
-	//get the dropdown;[p]
-	let objectSelect = document.getElementById("objectSelect");
+  //get the dropdown;[p]
+  let objectSelect = document.getElementById("objectSelect");
 
-	let forbiddenTagNames = ["SCRIPT", "HEADER", "NAV"];
+  let forbiddenTagNames = ["SCRIPT", "HEADER", "NAV"];
 
   //get all elements in the body
   let allElements = document.querySelectorAll("body *");
@@ -245,18 +268,18 @@ function refreshDropdowns() {
   seperatorOption.text = "---Other Elements On Page---";
   objectSelect.add(seperatorOption);
 
-	for (const element of allElements) {
-		//get unique elements (just for the name) and add them to the list
-		if (
-		!allElementTypes.includes(element.tagName) &&
-		!forbiddenTagNames.includes(element.tagName)
-		) {
-			allElementTypes.push(element.tagName);
-			let option = document.createElement("option");
-			option.text = element.tagName.toLowerCase();
-			objectSelect.add(option);
-		}
-	}
+  for (const element of allElements) {
+    //get unique elements (just for the name) and add them to the list
+    if (
+      !allElementTypes.includes(element.tagName) &&
+      !forbiddenTagNames.includes(element.tagName)
+    ) {
+      allElementTypes.push(element.tagName);
+      let option = document.createElement("option");
+      option.text = element.tagName.toLowerCase();
+      objectSelect.add(option);
+    }
+  }
 }
 
 populateHTML(httyd);
@@ -286,51 +309,50 @@ function getColorFormat(color) {
 }
 
 function headerDropdownAction() {
-	//get the dropdowns
-	let actionSelect = document.getElementById("actionSelect");
-	let objectSelect = document.getElementById("objectSelect");
+  //get the dropdowns
+  let actionSelect = document.getElementById("actionSelect");
+  let objectSelect = document.getElementById("objectSelect");
 
-	//get all elements with the selected tagname
-	let allElements = document.getElementsByTagName(objectSelect.value);
-	for (const element of allElements) {
-		let styling = getComputedStyle(element).fontSize;
-		if (actionSelect.value === "Text Smaller") {
-			element.style.fontSize = parseInt(styling.replace("px", "")) - 4 + "px";
-		}
-		if (actionSelect.value === "Text Bigger") {
-			element.style.fontSize = parseInt(styling.replace("px", "")) + 4 + "px";
-		}
+  //get all elements with the selected tagname
+  let allElements = document.getElementsByTagName(objectSelect.value);
+  for (const element of allElements) {
+    let styling = getComputedStyle(element).fontSize;
+    if (actionSelect.value === "Text Smaller") {
+      element.style.fontSize = parseInt(styling.replace("px", "")) - 4 + "px";
+    }
+    if (actionSelect.value === "Text Bigger") {
+      element.style.fontSize = parseInt(styling.replace("px", "")) + 4 + "px";
+    }
 
-		function getColorFormat(color) {
-			//check if color is HEX
-			color = color.replace("#", "");
-			if (!isNaN(parseInt(color))) {
-				//color is HEX, but check validity
-				if (color.length < 6) {
-					color = prompt(
-						"Value not valid. Enter a new HEX value or standard naming for the new color:"
-					);
-					getColorFormat(color);
-				}
-				return "#" + color.replace("#", "");
-			}
-			return color;
-		}
+    function getColorFormat(color) {
+      //check if color is HEX
+      color = color.replace("#", "");
+      if (!isNaN(parseInt(color))) {
+        //color is HEX, but check validity
+        if (color.length < 6) {
+          color = prompt(
+            "Value not valid. Enter a new HEX value or standard naming for the new color:"
+          );
+          getColorFormat(color);
+        }
+        return "#" + color.replace("#", "");
+      }
+      return color;
+    }
 
-		if (actionSelect.value === "Text Color") {
-			let color = prompt(
-				"Enter a new HEX value or standard naming for the new color:"
-			);
-			element.style.color = getColorFormat(color);
-		}
-		if (actionSelect.value === "Background Color") {
-			let color = prompt(
-				"Enter a new HEX value or standard naming for the new backgroundColor:"
-			);
-			element.style.backgroundColor = getColorFormat(color);
-		}
-	}
+    if (actionSelect.value === "Text Color") {
+      let color = prompt(
+        "Enter a new HEX value or standard naming for the new color:"
+      );
+      element.style.color = getColorFormat(color);
+    }
+    if (actionSelect.value === "Background Color") {
+      let color = prompt(
+        "Enter a new HEX value or standard naming for the new backgroundColor:"
+      );
+      element.style.backgroundColor = getColorFormat(color);
+    }
+  }
 }
-
 
 refreshDropdowns();
