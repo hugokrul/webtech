@@ -4,10 +4,21 @@ function refreshDropdowns() {
 
   let forbiddenTagNames = ["SCRIPT", "HEADER", "NAV"];
 
-  //get alle elements in the body
+  //get all elements in the body
   let allElements = document.querySelectorAll("body *");
-  console.log(allElements);
   let allElementTypes = [];
+
+  let DOMelements = ["BODY", "HEADER"];
+
+  for (const DOMelement of DOMelements) {
+    let option = document.createElement("option");
+    option.text = DOMelement.toLowerCase();
+    objectSelect.add(option);
+  }
+
+  let seperatorOption = document.createElement("option");
+  seperatorOption.text = "---Other Elements On Page---";
+  objectSelect.add(seperatorOption);
 
   for (const element of allElements) {
     //get unique elements (just for the name) and add them to the list
