@@ -62,18 +62,162 @@ class Actor extends Artist {
 }
 
 // actors
-const jayBaruchel = new Actor("Jay Baruchel", 1982, ["This is the end", "She's out of my league", "How to train your dragon", "Tropic Thunder", "Goon"], "../images/cast/jayB.jpg", "Hiccup");
-const gerardButler = new Actor("Gerard Butler", 1969, ["Plane", "olympus has fallen", "Angel has fallen", "How to train your dragon", "London has fallen", "300"], "../images/cast/gerardB.jpg", "Stoick");
-const craigFerguson = new Actor("Craig Ferguson", 1962, ["Then came you", "the hustler", "How to train your dragon", "Saving Grace", "Ill be there"], "../images/cast/craigF.jpg", "Gobber");
-const americaFerrera = new Actor("America Ferrera", 1984, ["The sisterhood", "Barbie", "How to train your dragon", "WeCrashed", "La Misma Luna"], "../images/cast/americaF.jpg", "Astrid");
-const jonahHill = new Actor("Jonah Hill", 1983, ["the wolf of wall street", "21 jump street", "How to train your dragon", "you people", "The lego Movie"], "../images/cast/jonahH.jpg", "Snotlout");
-const christofferMP = new Actor("Christoffer Mintz-Plasse", 1989, ["Superbad", "Kick-Ass 2", "how to train your dragon", "Role models", "Neighbors"], "../images/cast/christofferM.jpg", "Fishlegs");
-const tjMiller = new Actor("T.J. Miller", 1982, ["Office Christmas Party", "The Emoji Movie", "How to train your dragon", "Big Hero 6", "Underwater"], "../images/cast/tjM.jpg", "Tuffnut");
-const kristenWiig = new Actor("Kirsten Wiig", 1973, ["Bridesmaids", "Wonder Woman 1984", "How to train your dragon", "Te secret life of Walter Mitty", "Despicable me"], "../images/cast/kristenW.jpg", "Ruffnut");
-const robinAtkinDownes = new Actor("Robin Atkin Downes", 1976, ["King star king", "Superman vs. the elite", "How to train your dragon", "The werewolf reborn", "Meet the spy"], "../images/cast/robinA.jpg", "Ack");
-const kieronElliot = new Actor("Kieron Elliot", 1995, ["Solitary", "Night Eyes", "How to train your dragon", "Sir billi", "Episode 50"], "../images/cast/kieronE.jpg", "Hoark the Haggard");
-const ashleyJensen = new Actor("Ashley Jensen", 1969, ["Agatha Raisin", "Mayflies", "How to train your dragon", "Nativity!", "Christmas on Mistletoe Farm"], "../images/cast/ashleyJ.jpg", "Phlegma the Fierce");
-const davidTennant = new Actor("David Tennant", 1971, ["Doctor Who", "Des", "How to train your dragon", "The escape artist", "Gracepoint"], "../images/cast/davidT.jpg");
+const jayBaruchel = new Actor(
+  "Jay Baruchel",
+  1982,
+  [
+    "This is the end",
+    "She's out of my league",
+    "How to train your dragon",
+    "Tropic Thunder",
+    "Goon",
+  ],
+  "../images/cast/jayB.jpg",
+  "Hiccup"
+);
+const gerardButler = new Actor(
+  "Gerard Butler",
+  1969,
+  [
+    "Plane",
+    "olympus has fallen",
+    "Angel has fallen",
+    "How to train your dragon",
+    "London has fallen",
+    "300",
+  ],
+  "../images/cast/gerardB.jpg",
+  "Stoick"
+);
+const craigFerguson = new Actor(
+  "Craig Ferguson",
+  1962,
+  [
+    "Then came you",
+    "the hustler",
+    "How to train your dragon",
+    "Saving Grace",
+    "Ill be there",
+  ],
+  "../images/cast/craigF.jpg",
+  "Gobber"
+);
+const americaFerrera = new Actor(
+  "America Ferrera",
+  1984,
+  [
+    "The sisterhood",
+    "Barbie",
+    "How to train your dragon",
+    "WeCrashed",
+    "La Misma Luna",
+  ],
+  "../images/cast/americaF.jpg",
+  "Astrid"
+);
+const jonahHill = new Actor(
+  "Jonah Hill",
+  1983,
+  [
+    "the wolf of wall street",
+    "21 jump street",
+    "How to train your dragon",
+    "you people",
+    "The lego Movie",
+  ],
+  "../images/cast/jonahH.jpg",
+  "Snotlout"
+);
+const christofferMP = new Actor(
+  "Christoffer Mintz-Plasse",
+  1989,
+  [
+    "Superbad",
+    "Kick-Ass 2",
+    "how to train your dragon",
+    "Role models",
+    "Neighbors",
+  ],
+  "../images/cast/christofferM.jpg",
+  "Fishlegs"
+);
+const tjMiller = new Actor(
+  "T.J. Miller",
+  1982,
+  [
+    "Office Christmas Party",
+    "The Emoji Movie",
+    "How to train your dragon",
+    "Big Hero 6",
+    "Underwater",
+  ],
+  "../images/cast/tjM.jpg",
+  "Tuffnut"
+);
+const kristenWiig = new Actor(
+  "Kirsten Wiig",
+  1973,
+  [
+    "Bridesmaids",
+    "Wonder Woman 1984",
+    "How to train your dragon",
+    "Te secret life of Walter Mitty",
+    "Despicable me",
+  ],
+  "../images/cast/kristenW.jpg",
+  "Ruffnut"
+);
+const robinAtkinDownes = new Actor(
+  "Robin Atkin Downes",
+  1976,
+  [
+    "King star king",
+    "Superman vs. the elite",
+    "How to train your dragon",
+    "The werewolf reborn",
+    "Meet the spy",
+  ],
+  "../images/cast/robinA.jpg",
+  "Ack"
+);
+const kieronElliot = new Actor(
+  "Kieron Elliot",
+  1995,
+  [
+    "Solitary",
+    "Night Eyes",
+    "How to train your dragon",
+    "Sir billi",
+    "Episode 50",
+  ],
+  "../images/cast/kieronE.jpg",
+  "Hoark the Haggard"
+);
+const ashleyJensen = new Actor(
+  "Ashley Jensen",
+  1969,
+  [
+    "Agatha Raisin",
+    "Mayflies",
+    "How to train your dragon",
+    "Nativity!",
+    "Christmas on Mistletoe Farm",
+  ],
+  "../images/cast/ashleyJ.jpg",
+  "Phlegma the Fierce"
+);
+const davidTennant = new Actor(
+  "David Tennant",
+  1971,
+  [
+    "Doctor Who",
+    "Des",
+    "How to train your dragon",
+    "The escape artist",
+    "Gracepoint",
+  ],
+  "../images/cast/davidT.jpg"
+);
 
 let actors = [
   jayBaruchel,
@@ -105,144 +249,151 @@ const deanDeBlois = new Director("Dean De Blois", 1970, [
   "Helma",
 ]);
 
-const httyd = new Movie(2010, "How To Train Your Dragon", "Action/Fantasy", deanDeBlois, [cressidaCowell], actors);
+const httyd = new Movie(
+  2010,
+  "How To Train Your Dragon",
+  "Action/Fantasy",
+  deanDeBlois,
+  [cressidaCowell],
+  actors
+);
 
 function populateHTML(movie) {
-	const movieSection = document.createElement('section');
+  const movieSection = document.createElement("section");
 
-	const titleElement = document.createElement('h1');
-	titleElement.innerText = movie.title;
-	movieSection.appendChild(titleElement);
+  const titleElement = document.createElement("h1");
+  titleElement.innerText = movie.title;
+  movieSection.appendChild(titleElement);
 
-	const yearAndGenreElement = document.createElement('h3');
-	yearAndGenreElement.innerText = movie.year + ' - ' + movie.genre;
-	movieSection.appendChild(yearAndGenreElement);
+  const yearAndGenreElement = document.createElement("h3");
+  yearAndGenreElement.innerText = movie.year + " - " + movie.genre;
+  movieSection.appendChild(yearAndGenreElement);
 
-	const directorElement = document.createElement('h4');
-	directorElement.innerText = 'Directed by: ' + movie.director.name;
-	movieSection.appendChild(directorElement);
-	
-	const writerElement = document.createElement('h4');
-	let writerText = 'Written by: '
-	for (let i = 0; i < movie.writers.length; i++ ) {
-		writerText += movie.writers[i].name
-		if (i == movie.writers.length - 1) {
-			break;
-		}
-		writerText += ', '
-	}
-	writerElement.innerText = writerText;
-	movieSection.appendChild(writerElement);
-	document.body.appendChild(movieSection);
+  const directorElement = document.createElement("h4");
+  directorElement.innerText = "Directed by: " + movie.director.name;
+  movieSection.appendChild(directorElement);
 
-	const artistSection = document.createElement('section');
-  artistSection.classList.add('artists');
+  const writerElement = document.createElement("h4");
+  let writerText = "Written by: ";
+  for (let i = 0; i < movie.writers.length; i++) {
+    writerText += movie.writers[i].name;
+    if (i == movie.writers.length - 1) {
+      break;
+    }
+    writerText += ", ";
+  }
+  writerElement.innerText = writerText;
+  movieSection.appendChild(writerElement);
+  document.body.appendChild(movieSection);
 
-	const castH2 = document.createElement('h2');
-	castH2.innerText = "Cast:"
-	movieSection.appendChild(castH2);
+  const artistSection = document.createElement("section");
+  artistSection.classList.add("artists");
 
-	for (let i = 0; i < movie.stars.length; i++) {
-		const starElement = document.createElement('div');
-		starElement.style.display = "flex";
-		starElement.style.flexDirection = "column";
-		starElement.style.alignItems = "center";
-		starElement.style.marginBottom = "20px";
+  const castH2 = document.createElement("h2");
+  castH2.innerText = "Cast:";
+  movieSection.appendChild(castH2);
 
-		const starImage = document.createElement('img');
-		starImage.setAttribute('src', movie.stars[i].picture);
-		starImage.setAttribute('width', '100px');
-		starImage.setAttribute('height', '135px');
-		
-		const starTextElement = document.createElement('div');
-		starTextElement.style.flexDirection = "column"
-		starTextElement.style.flexWrap = "wrap";
-		starTextElement.style.justifyContent = "center";
-		starTextElement.style.backgroundColor = "#3d3d3d";
-		starTextElement.style.padding = "10px";
-		starTextElement.style.borderRadius = "5px";
-		starTextElement.style.position = "absolute";
-		starTextElement.style.marginTop = "130px";
-		starTextElement.classList.add('hide');
-		
-		starImage.addEventListener('mouseover', () => {
-			starTextElement.classList.remove('hide');
-			starTextElement.classList.add('show');
-		})
-		starImage.addEventListener('mouseout', () => {
-			starTextElement.classList.add('hide');
-			starTextElement.classList.remove('show');
-		})
-		starTextElement.addEventListener('mouseover', () => {
-			starTextElement.classList.remove('hide');
-			starTextElement.classList.add('show');
-		})
-		starTextElement.addEventListener('mouseout', () => {
-			starTextElement.classList.add('hide');
-			starTextElement.classList.remove('show');
-		})
-		
-		const starTextActor = document.createElement('p');
-		starTextActor.style.textAlign = "left"
-		starTextActor.innerText = `${movie.stars[i].name} - ${movie.stars[i].yob} plays: ${movie.stars[i].character}`
+  for (let i = 0; i < movie.stars.length; i++) {
+    const starElement = document.createElement("div");
+    starElement.style.display = "flex";
+    starElement.style.flexDirection = "column";
+    starElement.style.alignItems = "center";
+    starElement.style.marginBottom = "20px";
 
-		const starTextMovies = document.createElement('p');
-		let starTextMoviesText = 'Plays in: '
-		const actorMovies = movie.stars[i].listOfMovies
-		for (let i = 0; i<actorMovies.length; i++) {
-			starTextMoviesText += actorMovies[i]
-			if (i == actorMovies.length - 1) {
-				break;
-			}
-			starTextMoviesText += ', '
-		}
-		starTextMovies.innerText = starTextMoviesText;
+    const starImage = document.createElement("img");
+    starImage.setAttribute("src", movie.stars[i].picture);
+    starImage.setAttribute("width", "100px");
+    starImage.setAttribute("height", "135px");
 
-		starTextMovies.style.color ="white";
-		starTextActor.style.color ="white";
+    const starTextElement = document.createElement("div");
+    starTextElement.style.flexDirection = "column";
+    starTextElement.style.flexWrap = "wrap";
+    starTextElement.style.justifyContent = "center";
+    starTextElement.style.backgroundColor = "#3d3d3d";
+    starTextElement.style.padding = "10px";
+    starTextElement.style.borderRadius = "5px";
+    starTextElement.style.position = "absolute";
+    starTextElement.style.marginTop = "130px";
+    starTextElement.classList.add("hide");
 
-		starTextElement.appendChild(starTextActor);
-		starTextElement.appendChild(starTextMovies);
+    starImage.addEventListener("mouseover", () => {
+      starTextElement.classList.remove("hide");
+      starTextElement.classList.add("show");
+    });
+    starImage.addEventListener("mouseout", () => {
+      starTextElement.classList.add("hide");
+      starTextElement.classList.remove("show");
+    });
+    starTextElement.addEventListener("mouseover", () => {
+      starTextElement.classList.remove("hide");
+      starTextElement.classList.add("show");
+    });
+    starTextElement.addEventListener("mouseout", () => {
+      starTextElement.classList.add("hide");
+      starTextElement.classList.remove("show");
+    });
 
-		starElement.appendChild(starImage);
-		starElement.appendChild(starTextElement);
-		artistSection.appendChild(starElement)
-	}
-	document.body.appendChild(artistSection);
+    const starTextActor = document.createElement("p");
+    starTextActor.style.textAlign = "left";
+    starTextActor.innerText = `${movie.stars[i].name} - ${movie.stars[i].yob} plays: ${movie.stars[i].character}`;
 
-	const posterTrailerPlotElement = document.createElement('section');
+    const starTextMovies = document.createElement("p");
+    let starTextMoviesText = "Plays in: ";
+    const actorMovies = movie.stars[i].listOfMovies;
+    for (let i = 0; i < actorMovies.length; i++) {
+      starTextMoviesText += actorMovies[i];
+      if (i == actorMovies.length - 1) {
+        break;
+      }
+      starTextMoviesText += ", ";
+    }
+    starTextMovies.innerText = starTextMoviesText;
 
-	const posterH2 = document.createElement('h2');
-	posterH2.innerText = "Poster:"
-	posterTrailerPlotElement.appendChild(posterH2);
+    starTextMovies.style.color = "white";
+    starTextActor.style.color = "white";
 
-	const posterElement = document.createElement('img');
-	posterElement.setAttribute('src', movie.poster);
-	posterElement.setAttribute('width', "200px");
-	posterElement.setAttribute('height', "270px");
-	posterTrailerPlotElement.appendChild(posterElement);
+    starTextElement.appendChild(starTextActor);
+    starTextElement.appendChild(starTextMovies);
 
-	const TrailerH2 = document.createElement('h2');
-	TrailerH2.innerText = "Trailer:"
-	posterTrailerPlotElement.appendChild(TrailerH2);
+    starElement.appendChild(starImage);
+    starElement.appendChild(starTextElement);
+    artistSection.appendChild(starElement);
+  }
+  document.body.appendChild(artistSection);
 
-	const trailerElement = document.createElement('video');
-	trailerElement.setAttribute('controls', true)
-	const trailerSourceElement = document.createElement('source');
-	trailerSourceElement.setAttribute('src', movie.trailer);
-	trailerElement.appendChild(trailerSourceElement);
-	posterTrailerPlotElement.appendChild(trailerElement);
+  const posterTrailerPlotElement = document.createElement("section");
 
-	const plotH2 = document.createElement('h2');
-	plotH2.innerText = "Plot:"
-	posterTrailerPlotElement.appendChild(plotH2);
+  const posterH2 = document.createElement("h2");
+  posterH2.innerText = "Poster:";
+  posterTrailerPlotElement.appendChild(posterH2);
 
-	const plotElement = document.createElement('p');
-	plotElement.classList.add('plot')
-	plotElement.innerText = movie.plot;
-	posterTrailerPlotElement.appendChild(plotElement);
+  const posterElement = document.createElement("img");
+  posterElement.setAttribute("src", movie.poster);
+  posterElement.setAttribute("width", "200px");
+  posterElement.setAttribute("height", "270px");
+  posterTrailerPlotElement.appendChild(posterElement);
 
-	document.body.appendChild(posterTrailerPlotElement);
+  const TrailerH2 = document.createElement("h2");
+  TrailerH2.innerText = "Trailer:";
+  posterTrailerPlotElement.appendChild(TrailerH2);
+
+  const trailerElement = document.createElement("video");
+  trailerElement.setAttribute("controls", true);
+  const trailerSourceElement = document.createElement("source");
+  trailerSourceElement.setAttribute("src", movie.trailer);
+  trailerElement.appendChild(trailerSourceElement);
+  posterTrailerPlotElement.appendChild(trailerElement);
+
+  const plotH2 = document.createElement("h2");
+  plotH2.innerText = "Plot:";
+  posterTrailerPlotElement.appendChild(plotH2);
+
+  const plotElement = document.createElement("p");
+  plotElement.classList.add("plot");
+  plotElement.innerText = movie.plot;
+  posterTrailerPlotElement.appendChild(plotElement);
+
+  document.body.appendChild(posterTrailerPlotElement);
 }
 
 function refreshDropdowns() {
@@ -255,7 +406,7 @@ function refreshDropdowns() {
   let allElements = document.querySelectorAll("body *");
   let allElementTypes = [];
 
-  let DOMelements = ["BODY", "HEADER"];
+  let DOMelements = ["BODY", "HEADER", "SECTION"];
 
   for (const DOMelement of DOMelements) {
     let option = document.createElement("option");
@@ -282,8 +433,6 @@ function refreshDropdowns() {
 }
 
 populateHTML(httyd);
-
-refreshDropdowns();
 
 function isHex(h) {
   let a = parseInt(h, 16);
@@ -315,12 +464,26 @@ function headerDropdownAction() {
   //get all elements with the selected tagname
   let allElements = document.getElementsByTagName(objectSelect.value);
   for (const element of allElements) {
-    let styling = getComputedStyle(element).fontSize;
+    let allElementElements = element.getElementsByTagName("*");
     if (actionSelect.value === "Text Smaller") {
-      element.style.fontSize = parseInt(styling.replace("px", "")) - 4 + "px";
+      for (const indElementElements of allElementElements) {
+        let styling = getComputedStyle(indElementElements).fontSize;
+        indElementElements.style.setProperty(
+          "font-size",
+          parseInt(styling.replace("px", "")) - 4 + "px",
+          "important"
+        );
+      }
     }
     if (actionSelect.value === "Text Bigger") {
-      element.style.fontSize = parseInt(styling.replace("px", "")) + 4 + "px";
+      for (const indElementElements of allElementElements) {
+        let styling = getComputedStyle(indElementElements).fontSize;
+        indElementElements.style.setProperty(
+          "font-size",
+          parseInt(styling.replace("px", "")) + 4 + "px",
+          "important"
+        );
+      }
     }
 
     function getColorFormat(color) {
@@ -343,13 +506,25 @@ function headerDropdownAction() {
       let color = prompt(
         "Enter a new HEX value or standard naming for the new color:"
       );
-      element.style.color = getColorFormat(color);
+      for (const indElementElements of allElementElements) {
+        indElementElements.style.setProperty(
+          "color",
+          getColorFormat(color),
+          "important"
+        );
+      }
     }
     if (actionSelect.value === "Background Color") {
       let color = prompt(
         "Enter a new HEX value or standard naming for the new backgroundColor:"
       );
-      element.style.backgroundColor = getColorFormat(color);
+      for (const indElementElements of allElementElements) {
+        indElementElements.style.setProperty(
+          "background-color",
+          getColorFormat(color),
+          "important"
+        );
+      }
     }
   }
 }
