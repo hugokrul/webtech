@@ -25,6 +25,28 @@ function refreshDropdowns() {
 
 refreshDropdowns();
 
+function isHex(h) {
+  let a = parseInt(h, 16);
+  return a.toString(16) === h;
+}
+
+function getColorFormat(color) {
+  //check if color is HEX
+  color = color.replace("#", "");
+  console.log(isHex(color));
+  if (isHex(color)) {
+    //color is HEX, but check validity
+    if (color.length < 6) {
+      color = prompt(
+        "Value not valid. Enter a new HEX value or standard naming for the new color:"
+      );
+      getColorFormat(color);
+    }
+    return "#" + color.replace("#", "");
+  }
+  return color;
+}
+
 function headerDropdownAction() {
   //get the dropdowns
   let actionSelect = document.getElementById("actionSelect");
@@ -39,22 +61,6 @@ function headerDropdownAction() {
     }
     if (actionSelect.value === "Text Bigger") {
       element.style.fontSize = parseInt(styling.replace("px", "")) + 4 + "px";
-    }
-
-    function getColorFormat(color) {
-      //check if color is HEX
-      color = color.replace("#", "");
-      if (!isNaN(parseInt(color))) {
-        //color is HEX, but check validity
-        if (color.length < 6) {
-          color = prompt(
-            "Value not valid. Enter a new HEX value or standard naming for the new color:"
-          );
-          getColorFormat(color);
-        }
-        return "#" + color.replace("#", "");
-      }
-      return color;
     }
 
     if (actionSelect.value === "Text Color") {
