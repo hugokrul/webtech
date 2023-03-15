@@ -400,13 +400,21 @@ function refreshDropdowns() {
   //get the dropdown;[p]
   let objectSelect = document.getElementById("objectSelect");
 
-  let forbiddenTagNames = ["SCRIPT", "HEADER", "NAV"];
+  //let forbiddenTagNames = ["SCRIPT", "HEADER", "NAV"];
 
   //get all elements in the body
-  let allElements = document.querySelectorAll("body *");
-  let allElementTypes = [];
+  //let allElements = document.querySelectorAll("body *");
+  //let allElementTypes = [];
 
-  let DOMelements = ["BODY", "HEADER", "SECTION"];
+  //Above code can be used for further complexity, but is left out because of the requirements of the project
+  let DOMelements = [
+    "BODY",
+    "HEADER",
+    "FOOTER",
+    "ASIDE",
+    "ARTICLES",
+    "SECTION",
+  ];
 
   for (const DOMelement of DOMelements) {
     let option = document.createElement("option");
@@ -414,7 +422,7 @@ function refreshDropdowns() {
     objectSelect.add(option);
   }
 
-  let seperatorOption = document.createElement("option");
+  /*let seperatorOption = document.createElement("option");
   seperatorOption.text = "---Other Elements On Page---";
   objectSelect.add(seperatorOption);
 
@@ -429,7 +437,9 @@ function refreshDropdowns() {
       option.text = element.tagName.toLowerCase();
       objectSelect.add(option);
     }
-  }
+  }*/
+
+  //Above code can be used for further complexity, but is left out because of the requirements of the project
 }
 
 populateHTML(httyd);
@@ -463,69 +473,73 @@ function headerDropdownAction() {
 
   //get all elements with the selected tagname
   let allElements = document.getElementsByTagName(objectSelect.value);
-  for (const element of allElements) {
-    let allElementElements = element.getElementsByTagName("*");
-    if (actionSelect.value === "Text Smaller") {
-      for (const indElementElements of allElementElements) {
-        let styling = getComputedStyle(indElementElements).fontSize;
-        indElementElements.style.setProperty(
-          "font-size",
-          parseInt(styling.replace("px", "")) - 4 + "px",
-          "important"
-        );
-      }
-    }
-    if (actionSelect.value === "Text Bigger") {
-      for (const indElementElements of allElementElements) {
-        let styling = getComputedStyle(indElementElements).fontSize;
-        indElementElements.style.setProperty(
-          "font-size",
-          parseInt(styling.replace("px", "")) + 4 + "px",
-          "important"
-        );
-      }
-    }
-
-    function getColorFormat(color) {
-      //check if color is HEX
-      color = color.replace("#", "");
-      if (!isNaN(parseInt(color))) {
-        //color is HEX, but check validity
-        if (color.length < 6) {
-          color = prompt(
-            "Value not valid. Enter a new HEX value or standard naming for the new color:"
+  if (allElements.length > 0) {
+    for (const element of allElements) {
+      let allElementElements = element.getElementsByTagName("*");
+      if (actionSelect.value === "Text Smaller") {
+        for (const indElementElements of allElementElements) {
+          let styling = getComputedStyle(indElementElements).fontSize;
+          indElementElements.style.setProperty(
+            "font-size",
+            parseInt(styling.replace("px", "")) - 4 + "px",
+            "important"
           );
-          getColorFormat(color);
         }
-        return "#" + color.replace("#", "");
       }
-      return color;
-    }
+      if (actionSelect.value === "Text Bigger") {
+        for (const indElementElements of allElementElements) {
+          let styling = getComputedStyle(indElementElements).fontSize;
+          indElementElements.style.setProperty(
+            "font-size",
+            parseInt(styling.replace("px", "")) + 4 + "px",
+            "important"
+          );
+        }
+      }
 
-    if (actionSelect.value === "Text Color") {
-      let color = prompt(
-        "Enter a new HEX value or standard naming for the new color:"
-      );
-      for (const indElementElements of allElementElements) {
-        indElementElements.style.setProperty(
-          "color",
-          getColorFormat(color),
-          "important"
+      function getColorFormat(color) {
+        //check if color is HEX
+        color = color.replace("#", "");
+        if (!isNaN(parseInt(color))) {
+          //color is HEX, but check validity
+          if (color.length < 6) {
+            color = prompt(
+              "Value not valid. Enter a new HEX value or standard naming for the new color:"
+            );
+            getColorFormat(color);
+          }
+          return "#" + color.replace("#", "");
+        }
+        return color;
+      }
+
+      if (actionSelect.value === "Text Color") {
+        let color = prompt(
+          "Enter a new HEX value or standard naming for the new color:"
         );
+        for (const indElementElements of allElementElements) {
+          indElementElements.style.setProperty(
+            "color",
+            getColorFormat(color),
+            "important"
+          );
+        }
+      }
+      if (actionSelect.value === "Background Color") {
+        let color = prompt(
+          "Enter a new HEX value or standard naming for the new backgroundColor:"
+        );
+        for (const indElementElements of allElementElements) {
+          indElementElements.style.setProperty(
+            "background-color",
+            getColorFormat(color),
+            "important"
+          );
+        }
       }
     }
-    if (actionSelect.value === "Background Color") {
-      let color = prompt(
-        "Enter a new HEX value or standard naming for the new backgroundColor:"
-      );
-      for (const indElementElements of allElementElements) {
-        indElementElements.style.setProperty(
-          "background-color",
-          getColorFormat(color),
-          "important"
-        );
-      }
-    }
+  } else {
+    alert("No Elements found in " + objectSelect.value);
   }
 }
 
